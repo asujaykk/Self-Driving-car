@@ -17,7 +17,6 @@ import argparse
 parser = argparse.ArgumentParser(description = 'Train the model for self driving car')
 parser.add_argument('--train_csv_file',metavar='string',type=str,required = True,help='Path to train driving log csv file')
 parser.add_argument('--test_csv_file',metavar='string',type=str,default=None,help='Path to test driving log csv file')
-parser.add_argument('--count',metavar='String',type=int,default=None,help='The count of data frame to be used from the csv file: default: full data')
 parser.add_argument('--batch_size',metavar='int',type=int,default=32,help='batchsize for training, default: 32')
 parser.add_argument('--epochs',metavar='int',type=int,default=50,help='epochs for training, default: 50')
 
