@@ -29,6 +29,10 @@ This project demonstrate basic self driving car model using udacity car driving 
    Then clone UDACITY behavioural cloning repository to this folder (for finally testing your model)   
           
           git clone https://github.com/udacity/CarND-Behavioral-Cloning-P3.git 
+          
+   Also create an anaconda virtual environment with the 'yaml'  file for training and testing your keras model.  
+   
+          conda -env -m yaml   
     
 ## 2. Setting up udacity driving simulator.    
    
@@ -36,9 +40,11 @@ This project demonstrate basic self driving car model using udacity car driving 
    
            wget https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/Term1-Sim/term1-simulator-linux.zip
            
-   If you want to get different versions or want to build custom simulator, then please check UDACITY self-driving-car-sim repository here https://github.com/udacity/self-driving-car-sim
+   If you want to get different versions or want to build custom simulator, then please check releases of UDACITY self-driving-car-sim repository here https://github.com/udacity/self-driving-car-sim
    
    After downloading please extract 'term1-simulator-linux.zip' file to the current directory.
+   
+   Then 
    
 ##  3. Creating training data from the simulator
    
