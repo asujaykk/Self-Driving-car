@@ -1,5 +1,14 @@
 # Self-Driving-Car (simulator version)
-This project demonstrate basic self driving car model using udacity car driving simulator
+This project demonstrate basic self driving car model using udacity car driving simulator. In this project we will be building a Convolution Neural Network model to predict the steering angle for a virtual car in the simulator running at a constat speed. And the goal of this model would be to keep the vehicle always within the track for a complete lap drive.
+
+1. Here first we will show how to drive in the track by manually driving the car (training mode) without making any mistake.
+2. During this training drive we will record the vehicle sensor values (virtual camera images of the car, steering angle sensor value, speed sensor value) in to a folder.
+3. Then we will feed this data to a CNN model for learning. The model will try to  predict the steering angle for different road situations like left curve, straight road, right curve , approaching the side lane and departing from the side lane. 
+4. After training the model, we will run the model with real time virtual camera sensor data as input, and use the output of the model to control the steering angle of the car in the simulator, in effect the model will be controling the steering of the car in the simulator.
+
+
+
+We will be using Udacity self driving car simulator for testing and training ou
 
 # Steps involved
   1. Setting up the environment. 
