@@ -44,8 +44,24 @@ This project demonstrate basic self driving car model using udacity car driving 
    
    After downloading please extract 'term1-simulator-linux.zip' file to the current directory.
    
-   Then 
    
 ##  3. Creating training data from the simulator
    
-   
+   1. First run the prebuild simulator executable from the extracted folder.
+   2. Once it is launched, choose training option from the main window.
+   3. Now click on the record button and choose 'data_set/train_data' folder for recording training data.
+   4. Align the car on the track and then click on the record button, then drive the car in the lap for 7 or 8 laps and then click on the record button again to stop recording
+   5. Now again click on the record button and choose 'data_set/test_data' folder for recording test data.
+   6. And repeat step 4 for 2 or 3 laps.
+   7. After recording, you can see the recorded images and driving_log.csv files under respective folders.
+
+## 4. Build and train the model with the training data.
+   1. Change your cwd to 'autopilot_project/Self-Driving-car'
+   2. activate the anaconda environmnet that you created earlier using below command.
+
+             cond activate 'env_name'
+   3. Then run 'model_train.py' to create a model and train it with the training and test data set that we created earlier. 
+       
+             python3 model_train.py --train_csv_file 'path to training driving_log.csv file' --test_csv_file   'path to test driving_log.csv file'
+             
+   4. 
