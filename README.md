@@ -4,9 +4,9 @@ This project demonstrate basic self driving car model using udacity car driving 
 # Steps involved
   1. Setting up the environment. 
   2. Setting up udacity driving simulator.
-  3. Creating training data from the simulator
+  3. Creating training data from the simulator.
   4. Build and train the model with the training data.
-  5. Testing the model using behavior cloning project
+  5. Testing the model using behavior cloning project.
   
 ## 1. Setting up the environment.
    First create a prject folder structure.   
@@ -62,6 +62,28 @@ This project demonstrate basic self driving car model using udacity car driving 
              cond activate 'env_name'
    3. Then run 'model_train.py' to create a model and train it with the training and test data set that we created earlier. 
        
-             python3 model_train.py --train_csv_file 'path to training driving_log.csv file' --test_csv_file   'path to test driving_log.csv file'
+             python3 model_train.py --train_csv_file 'path to training driving_log.csv file' --test_csv_file   'path to test driving_log.csv file' --batch_size 32 --epochs 50  1>train.log 2>&1
              
-   4. 
+      The above execution will create 4 different models (they are trained with diffrenet learning rates) under the folder 'models'. Please check 'train.log' to see the progress of training. After successsfull execution please revisit the log and check which model has minimum  'loss' and 'val_loss', and choose that model as final one.
+      
+      Note: If you have resource constraints then please reduce batchsize to 8 or 16 to avoid 'OOM' error.
+      
+   
+             
+##  5. Testing the model using behavior cloning project.
+
+   1. For testing the model, you need to lauch the simulator in autonomous mode 
+   2. Run the prebuild simulator executable.
+   3. Once it is launched, choose Autonomous mode from the main window (Now your simulator should be ready to accept a connection).
+   4. Change your cwd to 'autopilot_project/CarND-Behavioral-Cloning-P3'
+   5. Activate the anaconda environmnet that you created earlier using below command.
+
+             cond activate 'env_name'
+   6. Then run 'drive.py' with the folllwoing command.
+   
+             python3 drive.py 'path to the craeted model.h5 file'
+      
+   7. Now you can see the car in the simulator start running at 9kmph, and the car will try to adjust its steering angle. The car steering performance is  yor model performance.
+   8. If you are not getting good performnace, then retrain the model with more data andm with reduced batch size. and test it again and agian until you get a good performance in the track.
+       
+    
