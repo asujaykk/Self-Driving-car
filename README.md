@@ -9,16 +9,16 @@ This project demonstrate basic self driving car model using udacity car driving 
   5. Testing the model using behavior cloning project.
   
 ## 1. Setting up the environment.
-   First create a prject folder structure.   
+   First create a project folder structure.   
    
-   Create 'autopilot_project' folder for keeping all required files and modules for this projects.
+   Create 'autopilot_project' folder for keeping all required files and modules for this project.
            
            mkdir autopilot_project 
-   Under this folder create a 'data_set/train_data' , 'data_set/test_data'  folder for storing train and test driving data. 
+   Under this folder create a 'data_set/train_data' , 'data_set/test_data'  folder for storing training and test driving data. 
            
            cd autopilot_project  
            
-           mkdir data_set/train_data   # for storing traing driving data 
+           mkdir data_set/train_data   # for storing training driving data 
            
            mkdir data_set/test_data    # for storing validation drivng data  
           
@@ -26,7 +26,7 @@ This project demonstrate basic self driving car model using udacity car driving 
     
           git clone https://github.com/asujaykk/Self-Driving-car.git 
     
-   Then clone UDACITY behavioural cloning repository to this folder (for finally testing your model)   
+   Then clone UDACITY 'CarND-Behavioral-Cloning-P3' repository to this folder (for finally testing your model)   
           
           git clone https://github.com/udacity/CarND-Behavioral-Cloning-P3.git 
           
@@ -50,8 +50,8 @@ This project demonstrate basic self driving car model using udacity car driving 
    1. First run the prebuild simulator executable from the extracted folder.
    2. Once it is launched, choose training option from the main window.
    3. Now click on the record button and choose 'data_set/train_data' folder for recording training data.
-   4. Align the car on the track and then click on the record button, then drive the car in the lap for 7 or 8 laps and then click on the record button again to stop recording
-   5. Now again click on the record button and choose 'data_set/test_data' folder for recording test data.
+   4. Align the car on the track and then click on the record button, then drive the car in the track for 7 or 8 laps. Click on the record button again to stop recording.
+   5. Restart the simulator and  click on the record button and choose 'data_set/test_data' folder for recording test data.
    6. And repeat step 4 for 2 or 3 laps.
    7. After recording, you can see the recorded images and driving_log.csv files under respective folders.
 
