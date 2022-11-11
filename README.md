@@ -56,7 +56,7 @@ This project demonstrate basic self driving car model using udacity car driving 
    7. After recording, you can see the recorded images and driving_log.csv files under respective folders.
 
 ## 4. Build and train the model with the training data.
-   1. Change your cwd to 'autopilot_project/Self-Driving-car'
+   1. Change your cworking directory to 'autopilot_project/Self-Driving-car'
    2. activate the anaconda environmnet that you created earlier using below command.
 
              cond activate 'env_name'
@@ -82,8 +82,14 @@ This project demonstrate basic self driving car model using udacity car driving 
    6. Then run 'drive.py' with the folllwoing command.
    
              python3 drive.py 'path to the craeted model.h5 file'
-      
-   7. Now you can see the car in the simulator start running at 9kmph, and the car will try to adjust its steering angle. The car steering performance is  yor model performance.
-   8. If you are not getting good performnace, then retrain the model with more data andm with reduced batch size. and test it again and agian until you get a good performance in the track.
+        Note: If you are facing any issues then please check issues under 'https://github.com/udacity/CarND-Behavioral-Cloning-P3' repo to get solutions.  
+   7. If your environment is proper then you can see the car in the simulator start running at 9kmph, and the it will try to adjust its steering angle to keep the car always on the track. 
+   8. If the car is able to maintain on the track for a full lap, then your model is performing well :)
+   10. If you are not getting good performnace :( , then retrain the model with more data and with reduced batch size. and test it again and agian until you get a good performance.
+
+References:
+  1. https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf
+  2. https://github.com/udacity/self-driving-car-sim
+  
        
     
