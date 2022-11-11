@@ -87,7 +87,7 @@ This project demonstrate basic self driving car model using udacity car driving 
    8. If the car is able to maintain on the track for a full lap, then your model is performing well :)
    10. If you are not getting good performnace :( , then retrain the model with more data and with reduced batch size. and test it again and agian until you get a good performance.
    
-   11. I also kept a trained model  'save_at_8.h5' ############################## . This model will work perfectly with term1-beta simulator track1 (since it is only trained with term1 beta simulator track1). The model performed well  even with max speed of 30Mph.
+   11. I also kept a trained model  'save_at_8.h5' ############################## . This model will work perfectly with term1-beta simulator track1. The model performed well  even with max speed of 30Mph.
    
        The following GIF shows the output of 'save_at_8.h5' model. 
        
