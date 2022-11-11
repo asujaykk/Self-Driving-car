@@ -36,11 +36,11 @@ This project demonstrate basic self driving car model using udacity car driving 
     
 ## 2. Setting up udacity driving simulator.    
    
-   Fist download udacity prebuild term1 driving simultor from this link, 
+   First download udacity pre-build term1 driving simultor from this link, 
    
            wget https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/Term1-Sim/term1-simulator-linux.zip
            
-   If you want to get different versions or want to build custom simulator, then please check releases of UDACITY self-driving-car-sim repository here https://github.com/udacity/self-driving-car-sim
+   If you want to get different versions or want to build custom simulator, then please check  UDACITY self-driving-car-sim repository here https://github.com/udacity/self-driving-car-sim
    
    After downloading please extract 'term1-simulator-linux.zip' file to the current directory.
    
@@ -56,7 +56,7 @@ This project demonstrate basic self driving car model using udacity car driving 
    7. After recording, you can see the recorded images and driving_log.csv files under respective folders.
 
 ## 4. Build and train the model with the training data.
-   1. Change your cworking directory to 'autopilot_project/Self-Driving-car'
+   1. Change your current working directory to 'autopilot_project/Self-Driving-car'
    2. activate the anaconda environmnet that you created earlier using below command.
 
              cond activate 'env_name'
@@ -64,7 +64,8 @@ This project demonstrate basic self driving car model using udacity car driving 
        
              python3 model_train.py --train_csv_file 'path to training driving_log.csv file' --test_csv_file   'path to test driving_log.csv file' --batch_size 32 --epochs 50  1>train.log 2>&1
              
-      The above execution will create 4 different models (they are trained with diffrenet learning rates) under the folder 'autopilot_project/Self-Driving-car/models'. Please check 'autopilot_project/Self-Driving-car/train.log' to see the progress of training. After successsfull execution please revisit the log and check which model has minimum  'loss' and 'val_loss', and choose that model as final one.
+      The above execution will create 4 different models (for diffrenet learning rates) under the folder 'autopilot_project/Self-Driving-car/models'. Please check 'autopilot_project/Self-Driving-car/train.log' to see the progress of training. 
+      After successsfull training, please revisit the log and check which model had minimum  'loss' and 'val_loss', and choose that model as final one.
       
       Note: If you have resource constraints then please reduce batchsize to 8 or 16 to avoid 'OOM' error.
       
