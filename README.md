@@ -14,7 +14,7 @@ Udacity self driving car simulator is used testing and training our model.
   2. Setting up udacity driving simulator.
   3. Creating training/test data from the simulator.
   4. Build and train the model with the training data.
-  5. Testing the model using behavior cloning project.
+  5. Testing the model using Behavioral-Cloning project.
   
 ## 1. Setting up the environment.
    First create a project folder structure.   
@@ -78,7 +78,7 @@ Udacity self driving car simulator is used testing and training our model.
       Note: If your PC have resource constraints then please reduce batchsize to 8 or 16 to avoid 'OOM' error.
       
              
-##  5. Testing the model using behavior cloning project.
+##  5. Testing the model using Behavioral-Cloning project.
 
    1. Lauch the simulator in autonomous mode For testing the model.
    2. Run the pre-build simulator executable.
