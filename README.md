@@ -26,9 +26,9 @@ Udacity self driving car simulator is used testing and training our model.
            
            cd autopilot_project  
            
-           mkdir data_set/train_data   # for storing training driving data 
+           mkdir -p data_set/train_data   # for storing training driving data 
            
-           mkdir data_set/test_data    # for storing validation drivng data  
+           mkdir -p data_set/test_data    # for storing validation drivng data  
           
    Then clone this repository to 'autopilot_project' folder with below command.  
     
