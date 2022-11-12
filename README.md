@@ -12,7 +12,7 @@ Udacity self driving car simulator is used testing and training our model.
 # Steps involved
   1. Setting up the environment. 
   2. Setting up udacity driving simulator.
-  3. Creating training data from the simulator.
+  3. Creating training/test data from the simulator.
   4. Build and train the model with the training data.
   5. Testing the model using behavior cloning project.
   
