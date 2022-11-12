@@ -51,6 +51,9 @@ Udacity self driving car simulator is used testing and training our model.
    To get different versions or to build a custom simulator, then please check  UDACITY self-driving-car-sim repository here https://github.com/udacity/self-driving-car-sim
    
    After downloading please extract 'term1-simulator-linux.zip' file to 'autopilot_project' folder.
+   Open terminal and navigate to 'autopilot_project/term1-simulator-linux/beta_simulator_linux' and make 'beta_simulator.x86_64' (or beta_simulator.x86 based on your system architecture) as executable with the following command.  
+   
+           sudo chmod +x beta_simulator.x86_64
    
    
 ##  3. Creating training/test data from the simulator.
