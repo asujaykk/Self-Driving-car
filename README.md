@@ -98,7 +98,7 @@ Udacity self driving car simulator is used testing and training our model.
    8. If the car is able to maintain on the track for a full lap, then your model is performing well :)
    10. If The car is not always stays on the track, then the model is poorly performing :( , then retrain the model with more data and with reduced batch size. and test it again and agian until a good performance is achived.
    
-   11. I also kept a trained model  'save_at_8.h5' ############################## . This model will work perfectly with term1-beta simulator track1. The model performed well  even with max speed of 30Mph.
+   11. I also kept a trained model  'save_at_8.h5' at https://drive.google.com/file/d/1VkyFqVZIGY8Oayi_i3R4czwdgNHZKxxt/view. This model will work perfectly with term1-beta simulator track1. The model performed well  even with max speed of 30Mph.
    
        The following GIF shows the output of 'save_at_8.h5' model. 
        
