@@ -1,0 +1,8 @@
+udacicty drive.py running but not connected to server
+  solution:
+    1. conda uninstall python-socketio
+    2. pip3 install python-socketio
+    
+    if this doesn't work then please isntall/downgrade python socket io to 4.2.1
+    
+       pip3 install python-socketio==4.2.1
