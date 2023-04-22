@@ -6,7 +6,7 @@ Created on Wed Nov  2 18:32:23 2022
 
 @author: akhil_kk
 """
-
+import os
 import pandas as pd
 from tensorflow import keras
 from utils import dataset
@@ -16,7 +16,7 @@ import argparse
 
 parser = argparse.ArgumentParser(description = 'Train the model for self driving car')
 parser.add_argument('--train_csv_file',metavar='string',type=str,required = True,help='Path to train driving log csv file')
-parser.add_argument('--test_csv_file',metavar='string',type=str,default=None,help='Path to test driving log csv file')
+parser.add_argument('--test_csv_file',metavar='string',type=str,required = True,help='Path to test driving log csv file')
 parser.add_argument('--batch_size',metavar='int',type=int,default=32,help='batchsize for training, default: 32')
 parser.add_argument('--epochs',metavar='int',type=int,default=50,help='epochs for training, default: 50')
 
@@ -64,7 +64,7 @@ for lr in lrs:
         print("learning rate: "+str(lr))
         print("loss : "+loss)
         callbacks = [
-            keras.callbacks.ModelCheckpoint("./models/"+str(lr)+"/"+loss+"/save_at_{epoch}.h5",save_best_only= True),
+            keras.callbacks.ModelCheckpoint(os.path.join('models',str(lr),str(loss),'save_at_{epoch}.h5'),save_best_only= True),
             keras.callbacks.EarlyStopping(monitor='loss',patience=5,mode='min'),
         ]
         model.compile(
